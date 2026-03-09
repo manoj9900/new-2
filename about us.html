@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>About Us | RV Innovation Labs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="about us .css">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="Favicon.jpg">
+</head>
+<body>
+
+
+<div class="header-wrapper">
+<div class="top-bar">
+<div class="top-bar-inner">
+<a href="Careers.html">Careers</a>
+<a href="News.html">News</a>
+<a href="Investors.html">Investors</a>
+<a href="Contact Us.html">Contact Us</a>
+</div>
+</div>
+
+
+<header class="main-navbar">
+<div class="navbar-inner">
+<div class="nav-left">
+<a href="index.html" class="logo">
+<img src="logo.jpg" alt="RV Innovation Labs Logo" class="logo-img">
+</a>
+<nav class="nav-links">
+<div class="nav-item mega">
+<a href="Insights.html">Insights</a>
+<div class="mega-menu">
+<div class="mega-left">
+<h4>Insights</h4>
+<p>Explore our latest thought leadership, insights, and ideas shaping the future of business.</p>
+<a href="Insights.html" class="mega-btn">Learn more →</a>
+</div>
+<div class="mega-right">
+<a href="Hot topics.html">Hot topics</a>
+<a href="Conversations for Tomorrow.html">Conversations for Tomorrow</a>
+<a href="World Economic Forum.html">World Economic Forum</a>
+<a href="Expert perspectives.html">Expert perspectives</a>
+</div>
+</div>
+</div>
+
+<div class="nav-item mega">
+<a href="Industries.html">Industries</a>
+<div class="mega-menu">
+<div class="mega-left">
+<h4>Industries</h4>
+<p>
+Discover how we help organizations across industries
+transform and grow in a digital-first world.
+</p>
+<a href="Industries.html" class="mega-btn">View all industries →</a>
+</div>
+<div class="mega-right">
+<a href="Banking & Financial Services.html">Banking & Financial Services</a>
+<a href="Healthcare & Life Sciences.html">Healthcare & Life Sciences</a>
+<a href="Manufacturing.html">Manufacturing</a>
+<a href="Retail & Consumer Products.html">Retail & Consumer Products</a>
+</div>
+</div>
+</div>
+
+
+<div class="nav-item mega">
+<a href="Services.html">Services</a>
+<div class="mega-menu services-menu">
+<div class="mega-left">
+<h4>Services</h4>
+<p>
+End-to-end services that help organizations innovate,
+transform, and grow at scale.
+</p>
+<a href="Services.html" class="mega-btn">Explore all services →</a>
+</div>
+<div class="mega-right services-right">
+<div class="services-column">
+<a href="Digital Transformation.html">Digital Transformation</a>
+<a href="Cloud Services.html">Cloud Services</a>
+<a href="Data & AI.html">Data & AI</a>
+<a href="Cybersecurity.html">Cybersecurity</a>
+</div>
+<div class="services-column">
+<a href="Application Development.html">Application Development</a>
+<a href="Enterprise Platforms.html">Enterprise Platforms</a>
+<a href="IT Consulting.html">IT Consulting</a>
+<a href="Infrastructure Services.html">Infrastructure Services</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="nav-item mega">
+<a href="about us.html">About Us</a>
+<div class="mega-menu about-menu">
+<div class="mega-left">
+<h4>About Us</h4>
+<p>
+Learn more about who we are, what we do,
+and how we create value for our clients.
+</p>
+<a href="about us.html" class="mega-btn">Discover more →</a>
+</div>
+<div class="mega-right about-rights">
+<a href="Who we are.html">Who we are</a>
+<a href="Leadership.html">Leadership</a>
+<a href="Our values.html">Our values</a>
+<a href="Sustainability.html">Sustainability</a>
+<a href="Diversity & Inclusion.html">Diversity & Inclusion</a>
+<a href="Corporate responsibility.html">Corporate responsibility</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>
+</div>
+
+
+<!-- MOBILE NAVBAR -->
+<div class="mobile-navbar">
+<a href="index.html" class="logo">
+<img src="logo.jpg" alt="RV Innovation Labs Logo" class="logo-img">
+</a>
+<div class="mobile-toggle" id="mobileToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-nav-links">
+<a href="Insights.html">Insights</a>
+<a href="Industries.html">Industries</a>
+<a href="Services.html">Services</a>
+<a href="about us.html">About Us</a>
+<a href="Careers.html">Careers</a>
+<a href="News.html">News</a>
+<a href="Investors.html">Investors</a>
+<a href="Contact Us.html">Contact Us</a>
+</div>
+</div>
+
+
+
+
+<!--hero-section-->
+<section class="hero">
+<!-- Background Video -->
+<img
+  src="about us.png"
+  alt="Hero Background"
+  style="
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:translate(-50%, -50%);
+    z-index:1;
+  "
+>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<!-- 3D Polygon Container -->
+<div class="hero-3d">
+<canvas id="polygonCanvas" data-aos="fade-right"></canvas>
+</div>
+<div class="hero-left">
+<h1>About Us</h1>
+<p>We help organizations transform through technology, insight, and execution excellence.</p>
+<div class="hero-actions">
+<a href="Services.html" class="btn-primary">Our Services</a>
+<a href="Contact Us.html" class="btn-secondary">Contact Us</a>
+</div>
+</div>
+</div>
+</section>
+
+
+<!--about-section-->
+<section class="about-section who-we-are">
+<div class="about-container">
+<div class="about-content">
+<span class="section-label" data-aos="fade-right">About Company</span>
+<h2 data-aos="fade-right">Who We Are</h2>
+<div class="about-text" data-aos="fade-right">
+<p>
+We are a forward-thinking technology organization focused on building
+reliable, scalable, and future-ready digital solutions for businesses
+operating in complex and fast-changing environments.
+</p>
+<p>
+Our approach combines deep industry knowledge, strong technical expertise,
+and a clear understanding of business objectives to deliver solutions that
+create measurable value.
+</p>
+<p>
+From strategy and architecture to engineering and ongoing optimization,
+we partner closely with our clients to design systems that are secure,
+resilient, and built to evolve with future demands.
+</p>
+<p>
+Guided by innovation, quality, and accountability, we help organizations
+accelerate transformation, improve operational efficiency, and unlock
+sustainable growth in the digital-first world.
+</p>
+<a href="Who we are.html" class="service-btn">Read More</a>
+</div>
+</div>
+<div class="about-visual">
+<div class="polygon-bg big"></div>
+<div class="polygon-bg mid"></div>
+<div class="polygon-bg small"></div>
+</div>
+</div>
+</section>
+
+
+
+<!--about-section leadership-section-->
+<section class="about-section leadership-section">
+<div class="about-container reverse">
+<div class="about-visual">
+<div class="polygon-bg big"></div>
+<div class="polygon-bg mid"></div>
+<div class="polygon-bg small"></div>
+</div>
+<div class="about-content">
+<span class="section-labels" data-aos="fade-left">Leadership</span>
+<h2 data-aos="fade-left">Leadership</h2>
+<div class="about-texts" data-aos="fade-left">
+<p>
+Our leadership team brings together deep industry experience,
+strategic vision, and a strong commitment to excellence.
+</p>
+<p>
+With a clear focus on long-term value creation, our leaders guide
+the organization through complex challenges while fostering
+innovation, accountability, and collaboration.
+</p>
+<p>
+They empower teams, build trusted partnerships, and ensure that
+every initiative aligns with our mission to deliver meaningful
+outcomes for clients and stakeholders.
+</p>
+<a href="Leadership.html" class="service-btn">Read More</a>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!--about-section who-we-are-->
+<section class="about-section who-we-are">
+<div class="about-container">
+<div class="about-content">
+<span class="section-label" data-aos="fade-right">Our Principles</span>
+<h2 data-aos="fade-right">Our Values</h2>
+<div class="about-text" data-aos="fade-right">
+<p>
+Our values define who we are and guide how we work, collaborate,
+and deliver outcomes for our clients and partners.
+</p>
+<p>
+We are committed to integrity, transparency, and accountability in
+every engagement, ensuring trust and long-term relationships.
+</p>
+<p>
+Innovation and excellence drive our approach, empowering teams to
+challenge convention, embrace change, and create meaningful impact.
+</p>
+<p>
+Above all, we value people — fostering an inclusive, respectful,
+and growth-oriented culture where diverse perspectives thrive.
+</p>
+<a href="Our values.html" class="service-btn">Read More</a>
+</div>
+</div>
+<div class="about-visual">
+<div class="polygon-bg big"></div>
+<div class="polygon-bg mid"></div>
+<div class="polygon-bg small"></div>
+</div>
+</div>
+</section>
+
+
+
+<!--about-section leadership-section-->
+<section class="about-section leadership-section">
+<div class="about-container reverse">
+<div class="about-visual">
+<div class="polygon-bg big"></div>
+<div class="polygon-bg mid"></div>
+<div class="polygon-bg small"></div>
+</div>
+<div class="about-content">
+<span class="section-labels" data-aos="fade-left">Sustainability</span>
+<h2 data-aos="fade-left">Sustainability</h2>
+<div class="about-texts" data-aos="fade-left">
+<p>
+Sustainability is integral to how we operate, innovate, and create
+long-term value for our clients, communities, and the environment.
+</p>
+<p>
+We are committed to responsible practices that reduce environmental
+impact, promote ethical operations, and support sustainable growth
+across all aspects of our business.
+</p>
+<p>
+Through conscious decision-making, efficient technologies, and
+continuous improvement, we aim to build solutions that contribute
+to a more resilient and sustainable digital future.
+</p>
+<a href="Sustainability.html" class="service-btn">Read More</a>
+</div>
+</div>
+</div>
+</section>
+
+
+<!--about-section who-we-are-->
+<section class="about-section who-we-are">
+<div class="about-container">
+<div class="about-content">
+<span class="section-label" data-aos="fade-right">People & Culture</span>
+<h2 data-aos="fade-right">Diversity & Inclusion</h2>
+<div class="about-text" data-aos="fade-right">
+<p>
+Diversity and inclusion are fundamental to our culture and the way
+we build, collaborate, and innovate across the organization.
+</p>
+<p>
+We are committed to creating an inclusive environment where
+individuals feel valued, respected, and empowered to contribute
+their unique perspectives and experiences.
+</p>
+<p>
+By embracing diverse backgrounds, ideas, and ways of thinking,
+we strengthen our teams, enhance creativity, and deliver better
+outcomes for our clients and communities.
+</p>
+<p>
+Our focus on equity, belonging, and opportunity helps us foster a
+workplace where everyone can grow, succeed, and make a meaningful
+impact.
+</p>
+<a href="Diversity & Inclusion.html" class="service-btn">Read More</a>
+</div>
+</div>
+<div class="about-visual">
+<div class="polygon-bg big"></div>
+<div class="polygon-bg mid"></div>
+<div class="polygon-bg small"></div>
+</div>
+</div>
+</section>
+
+
+
+<!--about-section leadership-section-->
+<section class="about-section leadership-section">
+<div class="about-container reverse">
+<div class="about-visual">
+<div class="polygon-bg big"></div>
+<div class="polygon-bg mid"></div>
+<div class="polygon-bg small"></div>
+</div>
+<div class="about-content">
+<span class="section-labels" data-aos="fade-left">Corporate Responsibility</span>
+<h2 data-aos="fade-left">Corporate Responsibility</h2>
+<div class="about-texts" data-aos="fade-left">
+<p>
+Corporate responsibility is central to how we conduct business and
+engage with our clients, partners, employees, and communities.
+</p>
+<p>
+We operate with integrity and accountability, ensuring ethical
+decision-making, transparency, and compliance across all operations.
+</p>
+<p>
+Through responsible governance, community engagement, and sustainable
+practices, we strive to create positive, long-lasting impact beyond
+business outcomes.
+</p>
+<a href="Corporate responsibility.html" class="service-btn">Read More</a>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<hr class="a-line">
+
+
+<!--footer-->
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-col">
+<h4>About Company</h4>
+<p>
+We are a forward-thinking technology solutions provider delivering
+innovative services to help businesses scale and thrive in a
+digital-first world.
+</p>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Insights.html">Insights</a></li>
+<li><a href="Industries.html">Industries</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="Careers.html">Careers</a></li>
+<li><a href="News.html">News</a></li>
+<li><a href="Investors.html">Investors</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<ul>
+<li><a href="Digital Transformation.html">Digital Transformation</a></li>
+<li><a href="Cloud Services.html">Cloud Services</a></li>
+<li><a href="Data & AI.html">Data & AI</a></li>
+<li><a href="Cybersecurity.html">Cybersecurity</a></li>
+<li><a href="Application Development.html">Application Development</a></li>
+<li><a href="Enterprise Platforms.html">Enterprise Platforms</a></li>
+<li><a href="IT Consulting.html">IT Consulting</a></li>
+<li><a href="Infrastructure Services.html">Infrastructure Services</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Get in Touch</h4>
+<p>123 Tech Avenue, Silicon Valley, CA</p>
+<p>Email: info@company.com</p>
+<h4 class="follow-title">Follow Us</h4>
+<div class="footer-social">
+<a href="https://www.linkedin.com/company/rvinnovationlabs" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a href="https://www.facebook.com/Rvinnovationlabs" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/rvinnovationlabs/" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="http://youtube.com/channel/UCA2L-a9-JWdX5d2rhKcXuQg" target="_blank"> <i class="bi bi-youtube"></i></a>
+<a href="https://x.com/RvILabs" target="_blank"><i class="bi bi-twitter-x"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+© 2026 Company Name. All rights reserved.
+</div>
+</footer>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  });
+</script>
+
+<script src="script.js"></script> 
+</body>
+</html>

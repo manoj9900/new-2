@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Contact Us | RV Innovation Labs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="Contact Us.css">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="Favicon.jpg">
+</head>
+<body>
+
+
+<div class="header-wrapper">
+<div class="top-bar">
+<div class="top-bar-inner">
+<a href="Careers.html">Careers</a>
+<a href="News.html">News</a>
+<a href="Investors.html">Investors</a>
+<a href="Contact Us.html">Contact Us</a>
+</div>
+</div>
+
+
+<header class="main-navbar">
+<div class="navbar-inner">
+<div class="nav-left">
+<a href="index.html" class="logo">
+<img src="logo.jpg" alt="AdLeway Digital Marketing Agency Logo" class="logo-img">
+</a>
+<nav class="nav-links">
+<div class="nav-item mega">
+<a href="Insights.html">Insights</a>
+<div class="mega-menu">
+<div class="mega-left">
+<h4>Insights</h4>
+<p>Explore our latest thought leadership, insights, and ideas shaping the future of business.</p>
+<a href="Insights.html" class="mega-btn">Learn more →</a>
+</div>
+<div class="mega-right">
+<a href="Hot topics.html">Hot topics</a>
+<a href="Conversations for Tomorrow.html">Conversations for Tomorrow</a>
+<a href="World Economic Forum.html">World Economic Forum</a>
+<a href="Expert perspectives.html">Expert perspectives</a>
+</div>
+</div>
+</div>
+
+<div class="nav-item mega">
+<a href="Industries.html">Industries</a>
+<div class="mega-menu">
+<div class="mega-left">
+<h4>Industries</h4>
+<p>
+Discover how we help organizations across industries
+transform and grow in a digital-first world.
+</p>
+<a href="Industries.html" class="mega-btn">View all industries →</a>
+</div>
+<div class="mega-right">
+<a href="Banking & Financial Services.html">Banking & Financial Services</a>
+<a href="Healthcare & Life Sciences.html">Healthcare & Life Sciences</a>
+<a href="Manufacturing.html">Manufacturing</a>
+<a href="Retail & Consumer Products.html">Retail & Consumer Products</a>
+</div>
+</div>
+</div>
+
+
+<div class="nav-item mega">
+<a href="Services.html">Services</a>
+<div class="mega-menu services-menu">
+<div class="mega-left">
+<h4>Services</h4>
+<p>
+End-to-end services that help organizations innovate,
+transform, and grow at scale.
+</p>
+<a href="Services.html" class="mega-btn">Explore all services →</a>
+</div>
+<div class="mega-right services-right">
+<div class="services-column">
+<a href="Digital Transformation.html">Digital Transformation</a>
+<a href="Cloud Services.html">Cloud Services</a>
+<a href="Data & AI.html">Data & AI</a>
+<a href="Cybersecurity.html">Cybersecurity</a>
+</div>
+<div class="services-column">
+<a href="Application Development.html">Application Development</a>
+<a href="Enterprise Platforms.html">Enterprise Platforms</a>
+<a href="IT Consulting.html">IT Consulting</a>
+<a href="Infrastructure Services.html">Infrastructure Services</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="nav-item mega">
+<a href="about us.html">About Us</a>
+<div class="mega-menu about-menu">
+<div class="mega-left">
+<h4>About Us</h4>
+<p>
+Learn more about who we are, what we do,
+and how we create value for our clients.
+</p>
+<a href="about us.html" class="mega-btn">Discover more →</a>
+</div>
+<div class="mega-right about-rights">
+<a href="Who we are.html">Who we are</a>
+<a href="Leadership.html">Leadership</a>
+<a href="Our values.html">Our values</a>
+<a href="Sustainability.html">Sustainability</a>
+<a href="Diversity & Inclusion.html">Diversity & Inclusion</a>
+<a href="Corporate responsibility.html">Corporate responsibility</a>
+</div>
+</div>
+</div>
+</nav>
+</div> 
+</div>
+</header>
+</div>
+
+
+<!-- MOBILE NAVBAR -->
+<div class="mobile-navbar">
+<a href="index.html" class="logo">
+<img src="logo.jpg" alt="AdLeway Digital Marketing Agency Logo" class="logo-img">
+</a>
+<div class="mobile-toggle" id="mobileToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-nav-links">
+<a href="Insights.html">Insights</a>
+<a href="Industries.html">Industries</a>
+<a href="Services.html">Services</a>
+<a href="about us.html">About Us</a>
+<a href="Careers.html">Careers</a>
+<a href="News.html">News</a>
+<a href="Investors.html">Investors</a>
+<a href="Contact Us.html">Contact Us</a>
+</div>
+</div>
+
+
+
+
+<!--hero-section-->
+<section class="hero">
+<!-- Background Video -->
+<img
+  src="Contact Us.jpg"
+  alt="Hero Background"
+  style="
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:translate(-50%, -50%);
+    z-index:1;
+  "
+>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<!-- 3D Polygon Container -->
+<div class="hero-3d">
+<canvas id="polygonCanvas" data-aos="fade-right"></canvas>
+</div>
+<div class="hero-left">
+<h1>Contact Us</h1>
+<p>
+Get in touch with our team to discuss your needs, ask questions,
+or explore how we can work together to achieve your goals.
+</p>
+<div class="hero-actions">
+<a href="Services.html" class="btn-primary">Our Services</a>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="contact-section">
+<!-- Header -->
+<div class="contact-header">
+<h1  data-aos="fade-up">Contact Us</h1>
+<p  data-aos="fade-up">
+Connect with our team to explore partnerships, discuss opportunities,
+or learn how our expertise can support your business objectives.
+We work closely with organizations to understand their challenges,
+operational priorities, and long-term strategic goals.
+Our approach combines industry insight, technical expertise,
+and a deep understanding of evolving market dynamics.
+Whether you are planning a new initiative, expanding capabilities,
+or optimizing existing systems, we provide clear guidance and support.
+Our teams collaborate transparently at every stage of engagement,
+ensuring alignment, accountability, and measurable outcomes.
+With a strong focus on innovation, security, and scalability,
+we help businesses navigate complexity with confidence.
+We believe in building trusted, long-term relationships
+that drive sustainable growth and lasting business value.
+</p>
+</div>
+<div class="contact-wrapper">
+<div class="contact-info polygon-box" data-aos="fade-left">
+<span class="poly poly-1"></span>
+<span class="poly poly-2"></span>
+<h2>Let’s Start a Conversation</h2>
+<p>
+Whether you have a specific project in mind or are exploring strategic
+possibilities, our team is ready to assist. Reach out to us for expert
+guidance, collaboration, and tailored solutions.
+</p>
+<ul class="contact-details">
+<li>
+<i class="fa-solid fa-envelope"></i>
+<span>contact@yourcompany.com</span>
+</li>
+<li>
+<i class="fa-solid fa-location-dot"></i>
+<span>Global Operations</span>
+</li>
+</ul>
+</div>
+
+
+<!-- Contact Form -->
+<div class="contact-form polygon-box" data-aos="fade-right">
+<h2>Send Us a Message</h2>
+<form class="contact-grid-form">
+<div class="form-group">
+<input type="text" placeholder="Full Name" required>
+</div>
+<div class="form-group">
+<input type="email" placeholder="Email Address" required>
+</div>
+<div class="form-group">
+<input type="text" placeholder="Company Name">
+</div>
+<div class="form-group">
+<input type="text" placeholder="Phone Number">
+</div>
+<div class="form-group full-width">
+<input type="text" placeholder="Subject">
+</div>
+<div class="form-group full-width">
+<textarea placeholder="Your Message" rows="4" required></textarea>
+</div>
+<div class="form-group full-width">
+<button type="submit">Submit Inquiry</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="contact-connections">
+<div class="connections-inner">
+<h2 class="connections-title">Connections</h2>
+
+<div class="connection-item active">
+<button class="connection-header">
+<span>Talent Acquisition (Recruitment Team)</span>
+<span class="icon"></span>
+</button>
+<div class="connection-content">
+<h4>Campus and Fresher Recruitment</h4>
+<p>
+For campus placement and fresher recruitment related queries,
+please raise a virtual ticket through our recruitment portal.
+</p>
+
+<h4>Experienced Professionals</h4>
+<p>
+For interview updates, candidature status, or offer letters,
+reach out with relevant details to the recruitment support team.
+</p>
+
+<h4>Ethics & Compliance</h4>
+<p>
+For concerns related to recruitment ethics or compliance,
+confidential reporting channels are available.
+</p>
+</div>
+</div>
+
+<div class="connection-item">
+<button class="connection-header">
+<span>HR Services</span>
+<span class="icon"></span>
+</button>
+<div class="connection-content">
+<h4>Provident Fund (PF)</h4>
+<p>
+PF-related queries including balance, withdrawals, and transfers
+should include employee ID and tenure details.
+</p>
+
+<h4>Exit & Employment Letters</h4>
+<p>
+Post-exit documentation requests can be submitted with
+employee details for faster resolution.
+</p>
+</div>
+</div>
+
+<div class="connection-item">
+<button class="connection-header">
+<span>Background Verification (BGV)</span>
+<span class="icon"></span>
+</button>
+<div class="connection-content">
+<p>
+Former employees requiring background verification assistance
+should submit complete employment details for verification processing.
+</p>
+</div>
+</div>
+
+<div class="connection-item">
+<button class="connection-header">
+<span>Procurement</span>
+<span class="icon"></span>
+</button>
+<div class="connection-content">
+<p>
+Vendor payment inquiries must include invoice number, PO number,
+amount, and internal point of contact to ensure timely support.
+</p>
+</div>
+</div>
+
+<div class="connection-item">
+<button class="connection-header">
+<span>Other</span>
+<span class="icon"></span>
+</button>
+<div class="connection-content">
+<p>
+For investor, media, or general corporate inquiries, please
+submit relevant identification details to route your request accurately.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="map-section" data-aos="fade-up">
+<div class="map-header" >
+<h2 >Our Global Presence</h2>
+<p >
+Strategically positioned to support clients worldwide, delivering
+expertise, innovation, and local insight wherever you operate.
+</p>
+</div>
+<div class="map-wrapper polygon-map">
+<span class="map-poly map-poly-1"></span>
+<span class="map-poly map-poly-2"></span>
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153166!3d-37.81627927975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1fefc7b%3A0xe7f7d6d5f1f5e2f!2sGoogle!5e0!3m2!1sen!2sin!4v1690000000000"
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+</section>
+
+
+
+
+
+
+
+<hr class="a-line">
+
+
+<!--footer-->
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-col">
+<h4>About Company</h4>
+<p>
+We are a forward-thinking technology solutions provider delivering
+innovative services to help businesses scale and thrive in a
+digital-first world.
+</p>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Insights.html">Insights</a></li>
+<li><a href="Industries.html">Industries</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="Careers.html">Careers</a></li>
+<li><a href="News.html">News</a></li>
+<li><a href="Investors.html">Investors</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<ul>
+<li><a href="Digital Transformation.html">Digital Transformation</a></li>
+<li><a href="Cloud Services.html">Cloud Services</a></li>
+<li><a href="Data & AI.html">Data & AI</a></li>
+<li><a href="Cybersecurity.html">Cybersecurity</a></li>
+<li><a href="Application Development.html">Application Development</a></li>
+<li><a href="Enterprise Platforms.html">Enterprise Platforms</a></li>
+<li><a href="IT Consulting.html">IT Consulting</a></li>
+<li><a href="Infrastructure Services.html">Infrastructure Services</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Get in Touch</h4>
+<p>123 Tech Avenue, Silicon Valley, CA</p>
+<p>Email: info@company.com</p>
+<h4 class="follow-title">Follow Us</h4>
+<div class="footer-social">
+<a href="https://www.linkedin.com/company/rvinnovationlabs" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a href="https://www.facebook.com/Rvinnovationlabs" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/rvinnovationlabs/" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="http://youtube.com/channel/UCA2L-a9-JWdX5d2rhKcXuQg" target="_blank"> <i class="bi bi-youtube"></i></a>
+<a href="https://x.com/RvILabs" target="_blank"><i class="bi bi-twitter-x"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+© 2026 Company Name. All rights reserved.
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+AOS.init({
+duration: 800,
+once: true
+});
+});
+</script>
+
+
+
+<script>
+document.querySelectorAll(".connection-header").forEach(header => {
+header.addEventListener("click", () => {
+const item = header.parentElement;
+document.querySelectorAll(".connection-item").forEach(i => {
+if (i !== item) i.classList.remove("active");
+});
+item.classList.toggle("active");
+});
+});
+</script>
+
+<script src="script.js"></script> 
+</body>
+</html>
