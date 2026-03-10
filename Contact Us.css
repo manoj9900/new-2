@@ -364,7 +364,7 @@ height: 100vh;
 width: 100%;
 overflow: hidden;
 background: #000000; 
-}
+} 
 .hero-video {
 position: absolute;
 top: 50%;
@@ -383,19 +383,19 @@ z-index: 1;
 background:
 radial-gradient(
 circle at right center,
-#3b165fe1 0%,
-rgba(59, 22, 95, 0.6) 30%,
-rgba(59, 22, 95, 0.25) 50%,
+#06186be1 0%,
+rgba(6, 24, 101, 0.6) 30%,
+rgba(4, 14, 61, 0.25) 50%,
 transparent 65%
 ),
 linear-gradient(
 90deg,
 rgba(0, 0, 0, 0.98) 0%,
 rgba(0, 0, 0, 0.92) 30%,
-rgba(6, 3, 18, 0.75) 50%,
+rgba(12, 6, 36, 0.75) 50%,
 rgba(6, 3, 18, 0.4) 70%,
-rgba(6, 3, 18, 0.15) 85%,
-rgba(6, 3, 18, 0.05) 100%
+rgba(13, 6, 43, 0.15) 85%,
+rgba(19, 8, 59, 0.05) 100%
 );
 }
 .hero-content {
@@ -440,8 +440,8 @@ text-transform: uppercase;
 color: #fff;
 background: linear-gradient(
 135deg,
-#351258,
-#5b2fa8
+#030f48e1,
+#1b3bcae1
 );
 border-radius: 999px;
 text-decoration: none;
@@ -466,11 +466,17 @@ transition: all 0.35s ease;
 .btn-primary:hover {
 transform: translateY(-2px);
 box-shadow:
-0 14px 40px rgba(91, 47, 168, 0.8);
+0 14px 40px rgba(91, 47, 168, 0.8),
+0 0 25px rgba(27, 59, 202, 0.7),
+0 0 60px rgba(27, 59, 202, 0.4);
 }
 .btn-secondary:hover {
 background: rgba(255, 255, 255, 0.08);
-border-color: #9f7aea;
+border-color: #1b3bcae1;
+box-shadow:
+0 14px 40px rgba(91, 47, 168, 0.8),
+0 0 25px rgba(27, 59, 202, 0.7),
+0 0 60px rgba(27, 59, 202, 0.4);
 }
 @media (max-width: 1024px) {
 .hero-content {
@@ -574,7 +580,7 @@ font-size: 0.95rem;
 
 
 .contact-section {
-background: #000;
+background: #0F172A;
 padding: 90px 80px;
 color: #fff;
 font-family: 'Ubuntu Mono', monospace;
@@ -811,7 +817,7 @@ font-size: 0.85rem;
 
 
 .map-section {
-background: #000;
+background: #0F172A;
 padding: 30px 80px;
 color: #fff;
 font-family: 'Ubuntu Mono', monospace;
@@ -883,8 +889,9 @@ border: 2px solid rgba(255,255,255,0.08);
 }
 
 
+
 .site-footer {
-background: radial-gradient(circle at top left, #3a165f, #0b0322 70%);
+background: #020617 !important;
 color: #fff;
 padding: 80px 0 0;
 font-family: 'Ubuntu Mono', monospace;
@@ -1113,7 +1120,10 @@ height: 42px;
 opacity: 0.4;
 transform: scale(0.75);
 }
-} 
+}
+
+
+
 
 
 
@@ -1124,7 +1134,7 @@ transform: scale(0.75);
 
 
 .contact-connections {
-background: #000;
+background: #0F172A;
 padding: 10px 10px 90px;
 color: #fff;
 }
