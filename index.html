@@ -256,8 +256,6 @@ into a meaningful experience.
 
 
 
-
-
 <!--services-alt-section-->
 <section class="services-alt-section">
 <div class="services-container">
@@ -823,24 +821,20 @@ antialias:true
 renderer.setPixelRatio(window.devicePixelRatio);
 
 function resize(){
-
 const w = canvas.clientWidth;
 const h = canvas.clientHeight;
 
 renderer.setSize(w,h,false);
-
 camera.aspect = w/h;
 camera.updateProjectionMatrix();
-
 }
-
 resize();
 
 /* LIGHTS */
 
 scene.add(new THREE.AmbientLight(0xffffff,0.6));
 
-const glowLight = new THREE.PointLight(0x4f46e5,3,40);
+const glowLight = new THREE.PointLight(0x3B82F6,3,40);
 glowLight.position.set(0,0,6);
 scene.add(glowLight);
 
@@ -851,7 +845,7 @@ const centerGeo = new THREE.CircleGeometry(1.7,64);
 const centerMat = new THREE.MeshStandardMaterial({
 color:0x050505,
 transparent:true,
-opacity:0.92
+opacity:0.95
 });
 
 const centerDisc = new THREE.Mesh(centerGeo,centerMat);
@@ -862,14 +856,13 @@ scene.add(centerDisc);
 const polyGeo = new THREE.CircleGeometry(0.9,6);
 
 const polyMat = new THREE.MeshStandardMaterial({
-color:0x2563eb,
-emissive:0x2563eb,
-emissiveIntensity:1.4
+color:0x3B82F6,
+emissive:0x3B82F6,
+emissiveIntensity:1.5
 });
 
 const polygon = new THREE.Mesh(polyGeo,polyMat);
 polygon.position.z = 0.1;
-
 scene.add(polygon);
 
 /* BOX RING */
@@ -878,7 +871,7 @@ const boxRing = new THREE.Group();
 const boxes = [];
 
 const radius = 3.3;
-const count = 30;
+const count = 32;
 
 for(let i=0;i<count;i++){
 
@@ -890,7 +883,7 @@ const y = Math.sin(angle)*radius;
 const geo = new THREE.BoxGeometry(0.38,0.38,0.12);
 
 const mat = new THREE.MeshStandardMaterial({
-color:0x2563eb,
+color:0x3B82F6,
 emissive:0x000000
 });
 
@@ -911,7 +904,7 @@ scene.add(boxRing);
 const ringGeo = new THREE.RingGeometry(3.9,4,64);
 
 const ringMat = new THREE.MeshBasicMaterial({
-color:0x60a5fa,
+color:0x06B6D4,
 transparent:true,
 opacity:0.7,
 side:THREE.DoubleSide
@@ -925,7 +918,7 @@ scene.add(glowRing);
 const outerGeo = new THREE.RingGeometry(5.2,5.25,128);
 
 const outerMat = new THREE.MeshBasicMaterial({
-color:0x60a5fa,
+color:0x3B82F6,
 transparent:true,
 opacity:0.5,
 side:THREE.DoubleSide
@@ -940,26 +933,38 @@ const stars = [];
 
 function createStar(){
 
-const geo = new THREE.SphereGeometry(0.05,8,8);
+const geo = new THREE.SphereGeometry(0.06,8,8);
 
 const mat = new THREE.MeshBasicMaterial({
-color:0x60a5fa
+color:0x06B6D4
 });
 
 const star = new THREE.Mesh(geo,mat);
 
+/* start at polygon */
+
 star.position.set(0,0,0);
 
-star.userData.angle = Math.random()*Math.PI*2;
+/* choose random box target */
+
+const target = boxes[Math.floor(Math.random()*boxes.length)];
+
+star.userData.target = target;
+
+const dir = new THREE.Vector3()
+.subVectors(target.position, star.position)
+.normalize();
+
+star.userData.direction = dir;
 
 scene.add(star);
 stars.push(star);
 
 }
 
-/* MORE RANDOM STARS */
+/* MORE STARS */
 
-setInterval(createStar,200);
+setInterval(createStar,120);
 
 /* ANIMATION */
 
@@ -969,29 +974,28 @@ requestAnimationFrame(animate);
 
 centerDisc.rotation.z -= 0.01;
 
-/* FASTER BOX ROTATION */
-
-boxRing.rotation.z += 0.008;
-
-/* OUTER RING ROTATION */
+boxRing.rotation.z += 0.01;
 
 outerRing.rotation.z -= 0.003;
 
 stars.forEach((star,i)=>{
 
-const speed = 0.18;
+const speed = 0.22;
 
-star.position.x += Math.cos(star.userData.angle)*speed;
-star.position.y += Math.sin(star.userData.angle)*speed;
+star.position.add(
+star.userData.direction.clone().multiplyScalar(speed)
+);
 
-boxes.forEach(box=>{
+const target = star.userData.target;
 
-const dist = star.position.distanceTo(box.position);
+const dist = star.position.distanceTo(target.position);
 
 if(dist < 0.35){
 
-box.material.emissive.setHex(0x60a5fa);
-box.material.emissiveIntensity = 2;
+target.material.emissive.setHex(0x06B6D4);
+target.material.emissiveIntensity = 2.5;
+
+/* remove star */
 
 scene.remove(star);
 stars.splice(i,1);
@@ -1000,7 +1004,7 @@ stars.splice(i,1);
 
 });
 
-});
+/* glow fade */
 
 boxes.forEach(box=>{
 box.material.emissiveIntensity *= 0.9;
@@ -1016,7 +1020,6 @@ window.addEventListener("resize",resize);
 
 });
 </script>
-
 
 
 
