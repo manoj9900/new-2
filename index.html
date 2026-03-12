@@ -1,414 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>RV Innovation Labs</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Meta Title -->
+<title>AdLeway | Advertising and Marketing Agency</title>
+<!-- Meta Description -->
+<meta name="description" content="AdLeway is a full-service advertising and marketing agency delivering creative branding, digital marketing, and growth-driven campaigns for modern businesses.">
+<!-- Meta Keywords -->
+<meta name="keywords" content="Advertising Agency, Marketing Agency, Digital Marketing, Branding, Creative Agency, AdLeway">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<script src="script.js"></script>
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="Favicon.jpg">
+<link rel="icon" type="image/x-icon" href="images/AdLeway-Favicon.png">
+<!-- AOS CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<!-- Swiper JS CDN for the slider functionality -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
-<div class="header-wrapper">
-<div class="top-bar">
-<div class="top-bar-inner">
-<a href="Careers.html">Careers</a>
-<a href="News.html">News</a>
-<a href="Investors.html">Investors</a>
-<a href="Contact Us.html">Contact Us</a>
-</div>
-</div>
-
-
-<header class="main-navbar">
-<div class="navbar-inner">
-<div class="nav-left">
+<header id="main-navbar" class="navbar sticky">
+<div class="container">
 <a href="index.html" class="logo">
-<img src="logo.jpg" alt="RV Innovation Labs Logo" class="logo-img">
+<img src="images/My Company Logo's .png" alt="AdLeway Digital Marketing Agency Logo" class="logo-img">
 </a>
-<nav class="nav-links">
-<div class="nav-item mega">
-<a href="Insights.html">Insights</a>
-<div class="mega-menu">
-<div class="mega-left">
-<h4>Insights</h4>
-<p>Explore our latest thought leadership, insights, and ideas shaping the future of business.</p>
-<a href="Insights.html" class="mega-btn">Learn more →</a>
+<nav id="main-nav">
+<ul>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li class="dropdown">
+<a href="services.html" class="dropdown-toggle" data-toggle="dropdown">
+Services <i class="bi bi-caret-down-fill dropdown-arrow"></i>
+</a>
+<div class="dropdown-content">
+<a href="Google Ads-PPC.html">Google Ads / PPC</a>
+<a href="Meta-Ads.html">Meta Ads</a>
+<a href="SEO.html">SEO</a>
+<a href="Content-Marketing.html">Content Marketing</a>
+<a href="Video-Marketing.html">Video Marketing</a>
+<a href="Email-WhatsApp Marketing.html">Email & WhatsApp Marketing</a>
+<a href="Analytics & Reporting.html">Analytics & Reporting</a>
+<a href="Web designing and Development.html">Web Designing & Development</a>
 </div>
-<div class="mega-right">
-<a href="Hot topics.html">Hot topics</a>
-<a href="Conversations for Tomorrow.html">Conversations for Tomorrow</a>
-<a href="World Economic Forum.html">World Economic Forum</a>
-<a href="Expert perspectives.html">Expert perspectives</a>
-</div>
-</div>
-</div>
-<div class="nav-item mega">
-<a href="Industries.html">Industries</a>
-<div class="mega-menu">
-<div class="mega-left">
-<h4>Industries</h4>
-<p>
-Discover how we help organizations across industries
-transform and grow in a digital-first world.
-</p>
-<a href="Industries.html" class="mega-btn">View all industries →</a>
-</div>
-<div class="mega-right">
-<a href="Banking & Financial Services.html">Banking & Financial Services</a>
-<a href="Healthcare & Life Sciences.html">Healthcare & Life Sciences</a>
-<a href="Manufacturing.html">Manufacturing</a>
-<a href="Retail & Consumer Products.html">Retail & Consumer Products</a>
-</div>
-</div>
-</div>
-
-
-<div class="nav-item mega">
-<a href="Services.html">Services</a>
-<div class="mega-menu services-menu">
-<div class="mega-left">
-<h4>Services</h4>
-<p>
-End-to-end services that help organizations innovate,
-transform, and grow at scale.
-</p>
-<a href="Services.html" class="mega-btn">Explore all services →</a>
-</div>
-<div class="mega-right services-right">
-<div class="services-column">
-<a href="Digital Transformation.html">Digital Transformation</a>
-<a href="Cloud Services.html">Cloud Services</a>
-<a href="Data & AI.html">Data & AI</a>
-<a href="Cybersecurity.html">Cybersecurity</a>
-</div>
-<div class="services-column">
-<a href="Application Development.html">Application Development</a>
-<a href="Enterprise Platforms.html">Enterprise Platforms</a>
-<a href="IT Consulting.html">IT Consulting</a>
-<a href="Infrastructure Services.html">Infrastructure Services</a>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="nav-item mega">
-<a href="about us.html">About Us</a>
-<div class="mega-menu about-menu">
-<div class="mega-left">
-<h4>About Us</h4>
-<p>
-Learn more about who we are, what we do,
-and how we create value for our clients.
-</p>
-<a href="about us.html" class="mega-btn">Discover more →</a>
-</div>
-<div class="mega-right about-rights">
-<a href="Who we are.html">Who we are</a>
-<a href="Leadership.html">Leadership</a>
-<a href="Our values.html">Our values</a>
-<a href="Sustainability.html">Sustainability</a>
-<a href="Diversity & Inclusion.html">Diversity & Inclusion</a>
-<a href="Corporate responsibility.html">Corporate responsibility</a>
-</div>
-</div>
-</div>
+</li>
+<li><a href="industries.html">Industries</a></li>
+<li><a href="casestudies.html">Portfolio</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
 </nav>
+<div class="nav-actions">
+<button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" id="menu-toggle">
+<i class="bi bi-list"></i> 
+</button>
+<a href="Contact Us.html" class="btn btn-cta">Get Started</a>
 </div>
 </div>
 </header>
-</div>
-
-<!-- MOBILE NAVBAR -->
-<div class="mobile-navbar">
-<a href="index.html" class="logo">
-<img src="logo.jpg" alt="RV Innovation Labs Logo" class="logo-img">
-</a>
-<div class="mobile-toggle" id="mobileToggle">
-<span></span>
-<span></span>
-<span></span>
-</div>
-</div>
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-<div class="mobile-nav-links">
-<a href="Insights.html">Insights</a>
-<a href="Industries.html">Industries</a>
-<a href="Services.html">Services</a>
-<a href="about us.html">About Us</a>
-<a href="Careers.html">Careers</a>
-<a href="News.html">News</a>
-<a href="Investors.html">Investors</a>
-<a href="Contact Us.html">Contact Us</a>
-</div>
-</div>
 
 
 
 
-<!--hero-section-->
-<section class="hero">
-<!-- Background Video -->
-<video class="hero-video" autoplay muted loop playsinline>
-<source src="12716-241674181.mp" type="video/mp4">
+<section id="hero" class="hero-section hero-video-sticky">
+<div class="hero-video-container">
+<video autoplay muted loop playsinline class="background-video">
+<source src="images/hero-video.webm" type="video/mp4">
 </video>
-<div class="hero-overlay"></div>
+</div>
+</div>
 <div class="hero-content">
-<!-- 3D Polygon Container -->
-<div class="hero-3d">
-<canvas id="polygonCanvas" data-aos="fade-right"></canvas>
-</div>
-<div class="hero-left">
-<h1>
-Smart Software.<br>
-Real Impact.
-</h1>
-<p>
-Turning ideas into reliable, high-performance digital solutions
-that scale with your business.
-</p>
-<div class="hero-actions">
-<a href="Services.html" class="btn-primary">Our Services</a>
-<a href="Contact Us.html" class="btn-secondary">Contact Us</a>
-</div>
+<h1 style="color: white;" data-aos="zoom-in">Adleway — Where Brands Take the Lead</h1>
+<p class="subtitle text-red" data-aos="zoom-in">Smart digital strategies, creative content, and performance-driven marketing that
+help your business grow faster.</p><br>
+<div class="hero-buttons">
+<a href="Contact Us.html" class="btn btn-primary" data-aos="slide-right">Book a Strategy Call</a>
+<a href="casestudies.html" class="btn btn-secondary" data-aos="slide-left">See Our Work</a>
 </div>
 </div>
 </section>
 
 
-
-
-
-<!--about-us-section-->
-<section class="about-us-section">
-<div class="about-us-container" data-aos="fade-up">
-<h2 class="about-us-title">About Us</h2>
-<p class="about-us-description">
-We are a technology-driven software company specializing in building scalable,
-secure, and high-performance digital solutions. Our team combines innovation,
-deep technical expertise, and strategic thinking to help businesses transform
-ideas into reliable software products.<br>
-From custom software development to modern digital platforms, we focus on
-delivering solutions that are efficient, future-ready, and aligned with
-real-world business goals. We believe in long-term partnerships, transparent
-processes, and technology that creates measurable impact.
+<section id="about-short-info" class="about-section-white">
+<div class="container about-flex">
+<div class="about-image-column" data-aos="slide-right">
+<img src="images/Best-Digital-Marketing-Agencies-In-Mumbai.jpg" alt="Digital marketing analytics on laptop" class="about-side-image">
+</div>
+<div class="about-content-column" data-aos="slide-left">
+<p class="small-heading text-red">WHO WE ARE</p>
+<h2 class="section-title-dark-left">
+Your Growth, <span class="accent-red-text">Engineered.</span>
+</h2>
+<p class="about-lead-left">
+We are a decade-strong digital marketing company committed to building
+brands that lead, campaigns that convert, and strategies that scale.
+With 10+ years of experience, Adleway has delivered high-impact digital
+solutions for businesses across multiple industries.<a href="about.html" style="color:#E71119; font-weight:600; text-decoration:none;">
+Read More
+</a>
+</p>
 <br>
-By embracing modern frameworks, cloud technologies, and best engineering
-practices, we empower organizations to grow, adapt, and succeed in an
-ever-evolving digital landscape.
-<br>
-Our approach is built on collaboration, precision, and continuous improvement.
-We work closely with our clients to understand their challenges, design
-thoughtful solutions, and deliver software that enhances performance,
-security, and user experience across every stage of development.
-<br><br>
-Whether supporting startups on their growth journey or helping established
-enterprises modernize their systems, we are committed to delivering technology
-that drives innovation, strengthens operations, and creates long-term value.
-</p>
-</div>
-</section>
-<!--about-section-->
-<section class="about-section">
-<div class="about-container">
-<div class="about-left">
-<div class="about-image-wrapper" data-aos="slide-left">
-<img id="aboutImage" src="gallery hero.jpg" alt="About image">
-</div>
-<div class="about-carousel-controls" data-aos="slide-left">
-<button class="nav-btn" id="prevBtn">&#10094;</button>
-<div class="about-dots">
-<span class="dot active" data-index="0"></span>
-<span class="dot" data-index="1"></span>
-<span class="dot" data-index="2"></span>
-<span class="dot" data-index="3"></span>
-<span class="dot" data-index="4"></span>
-<span class="dot" data-index="5"></span>
-</div>
-<button class="nav-btn" id="nextBtn">&#10095;</button>
-</div>
-</div>
-<div class="about-right" data-aos="slide-right">
-<div class="about-text">
-<div class="about-text-content">
-<h3 id="aboutHeading">Who We Are</h3>
-<p id="aboutDesc">
-We are a passionate team dedicated to delivering high-quality services that bring ideas to life.
-With a strong focus on creativity, innovation, and customer satisfaction, we turn every project
-into a meaningful experience.
-</p>
-</div>
-<div class="about-actions">
-<a href="about us.html" class="read-more-btn">Read More</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-
-<!--services-alt-section-->
-<section class="services-alt-section">
-<div class="services-container">
-<h2 class="services-alt-title" data-aos="fade-up">Our Services</h2>
-<p class="services-alt-intro" data-aos="fade-up">
-Enterprise-grade digital solutions engineered for scale, security,
-and long-term business impact. We combine strategic thinking,
-advanced engineering, and modern technologies to help organizations
-innovate faster, operate smarter, and build resilient digital
-foundations that support sustainable growth in a rapidly evolving
-global landscape.
-</p>
-<div class="services-alt-list">
-<!-- 1 -->
-<div class="service-alt-item" data-aos="fade-left">
-<div class="service-box">
-<div class="service-icon">DT</div>
-<div class="service-content">
-<h3>Digital Transformation</h3>
-<p>
-We help organizations modernize business models, operational processes,
-and customer experiences through innovation-led digital strategies.
-By leveraging emerging technologies, automation, and data-driven insights,
-we enable businesses to adapt quickly and stay competitive in a rapidly
-changing digital landscape.
-</p>
-<a href="Digital Transformation.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 2 -->
-<div class="service-alt-item reverse" data-aos="fade-right">
-<div class="service-box">
-<div class="service-icon">CL</div>
-<div class="service-content">
-<h3>Cloud Services</h3>
-<p>
-We design and implement secure, scalable cloud architectures that enable
-organizations to operate with greater agility and efficiency. Our cloud
-solutions help reduce infrastructure complexity, optimize operational
-costs, and support seamless scalability as business demands evolve.
-By leveraging modern cloud platforms and best practices, we ensure
-high availability, performance, and long-term reliability across
-enterprise environments.
-</p>
-<a href="Cloud Services.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 3 -->
-<div class="service-alt-item" data-aos="fade-left">
-<div class="service-box">
-<div class="service-icon">AI</div>
-<div class="service-content">
-<h3>Data & AI</h3>
-<p>
-Turning data into actionable intelligence through advanced analytics,
-intelligent automation, and AI-powered systems that support faster,
-smarter decision-making. We help organizations unlock the full value
-of their data by building scalable data platforms, predictive models,
-and insight-driven solutions that improve performance, efficiency,
-and long-term business outcomes.
-</p>
-<a href="Data & AI.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 4 -->
-<div class="service-alt-item reverse" data-aos="fade-right">
-<div class="service-box">
-<div class="service-icon">CS</div>
-<div class="service-content">
-<h3>Cybersecurity</h3>
-<p>
-Protecting digital assets with advanced security frameworks, risk management,
-and proactive threat monitoring. Our cybersecurity solutions are designed to
-safeguard critical systems, sensitive data, and enterprise infrastructure
-against evolving threats.
-
-We implement industry-leading security practices, continuous monitoring,
-and compliance-driven strategies to reduce risk, strengthen resilience,
-and ensure business continuity across complex digital environments.
-</p>
-<a href="Cybersecurity.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 5 -->
-<div class="service-alt-item" data-aos="fade-left">
-<div class="service-box">
-<div class="service-icon">AD</div>
-<div class="service-content">
-<h3>Application Development</h3>
-<p>
-Designing and building high-performance web and mobile applications
-using modern architectures, scalable frameworks, and intuitive user
-experiences. We focus on clean code, optimized performance, and
-future-ready solutions that adapt as your business grows.
-</p>
-<a href="Application Development.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 6 -->
-<div class="service-alt-item reverse" data-aos="fade-right">
-<div class="service-box">
-<div class="service-icon">EP</div>
-<div class="service-content">
-<h3>Enterprise Platforms</h3>
-<p>
-Integrating and optimizing enterprise platforms to streamline operations,
-improve collaboration, and enhance data visibility across the organization.
-We design scalable platform ecosystems that connect systems, automate workflows,
-and support long-term business agility while ensuring reliability,
-security, and seamless performance at enterprise scale.
-</p>
-<a href="Enterprise Platforms.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 7 -->
-<div class="service-alt-item" data-aos="fade-left">
-<div class="service-box">
-<div class="service-icon">IT</div>
-<div class="service-content">
-<h3>IT Consulting</h3>
-<p>
-Strategic consulting services designed to align technology initiatives with
-long-term business goals and innovation roadmaps. We help organizations assess
-their current IT landscape, identify opportunities for optimization, and
-design future-ready strategies that improve efficiency, scalability, and
-decision-making. Our consultants work closely with leadership teams to ensure
-technology investments deliver measurable value and sustainable growth.
-</p>
-<a href="IT Consulting.html" class="service-btn">Read More</a>
-</div>
-</div>
-</div>
-<!-- 8 -->
-<div class="service-alt-item reverse" data-aos="fade-right">
-<div class="service-box">
-<div class="service-icon">IS</div>
-<div class="service-content">
-<h3>Infrastructure Services</h3>
-<p>
-Modernizing business models, processes, and customer experiences through
-innovation-led digital strategies. We help organizations adopt emerging
-technologies, streamline operations, and create agile digital ecosystems
-that drive measurable growth and long-term competitive advantage.
-</p>
-<a href="Infrastructure Services.html" class="service-btn">Read More</a>
-</div>
-</div>
+<div class="about-buttons">
+<a href="about.html" class="btn btn-primary">
+Learn Our Story
+</a>
 </div>
 </div>
 </div>
@@ -417,165 +119,120 @@ that drive measurable growth and long-term competitive advantage.
 
 
 
+<section id="services-carousel-v2" class="services-section-premium">
+<div class="container-full">
+<div class="section-header-top" data-aos="zoom-in">
+<p class="small-heading text-red">WHAT WE EXCEL AT</p>
+<h2 class="section-title-dark">
+Our Full Spectrum <span class="accent-red-text">Services</span>
+</h2>
+</div>
+<div class="circle-container" data-aos="zoom-out">
+<a href="Google Ads-PPC.html" class="service-card" style="--rotation: 0deg;">
+<i class="bi bi-graph-up service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">Google Ads / PPC</h4>
+<p class="card-body-small">Immediate visibility with high-converting ads.</p>
+</a>
+<a href="Meta-Ads.html" class="service-card" style="--rotation: 45deg;">
+<i class="bi bi-person-video3 service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">Meta Ads</h4>
+<p class="card-body-small">High-performance Facebook & Instagram ad campaigns.</p>
+</a>
+<a href="SEO.html" class="service-card" style="--rotation: 90deg;">
+<i class="bi bi-search service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">SEO</h4>
+<p class="card-body-small">Sustainable organic growth and authority.</p>
+</a>
+<a href="Content-Marketing.html" class="service-card" style="--rotation: 135deg;">
+<i class="bi bi-pencil-square service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">Content Marketing</h4>
+<p class="card-body-small">Attracting and retaining customers with content.</p>
+</a>
+<a href="Video-Marketing.html" class="service-card" style="--rotation: 180deg;">
+<i class="bi bi-camera-video service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">Video Marketing</h4>
+<p class="card-body-small">High-impact visual storytelling for your brand.</p>
+</a>
+<a href="Email-WhatsApp Marketing.html" class="service-card" style="--rotation: 225deg;">
+<i class="bi bi-envelope-check service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">Email / WhatsApp Marketing</h4>
+<p class="card-body-small">Automations that convert leads into customers.</p>
+</a>
+<a href="Analytics & Reporting.html" class="service-card" style="--rotation: 270deg;">
+<i class="bi bi-speedometer service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">Analytics & Reporting</h4>
+<p class="card-body-small">Data-driven insights to optimize performance.</p>
+</a>
+<a href="Web designing and Development.html" class="service-card" style="--rotation: 315deg;">
+<i class="bi bi-code-slash service-icon"></i>
+<h4 class="card-title-small" style="font-family: 'Times New Roman', serif;">
+Web Designing & Development
+</h4>
+<p class="card-body-small">Fast, responsive & conversion-optimized websites.</p>
+</a>
+<a href="services.html" class="circle-center-link">
+<div class="circle-center" style="font-family: 'Times New Roman', serif;">
+AdLeway<br>Services
+</div>
+</a>
+</div>
+</div>
+</section>
 
-<!--inside-stories-section-->
-<section class="inside-stories-section">
-<video class="section-video" autoplay muted loop playsinline>
-<source src="12716-241674181.mp4" type="video/mp4">
-</video>
+
+
+
+
+
+<section class="industries-section">
 <div class="container">
-<h2 class="section-title"data-aos="fade-up">Inside Stories</h2>
-<p class="section-subtitle" data-aos="fade-up">
-Discover our latest insights and experiences that showcase the creativity, innovation, 
-and expertise behind every project we undertake. Dive deep into the stories of how 
-ideas transform into impactful solutions, exploring challenges, strategies, and outcomes. 
-Each story highlights the passion, collaboration, and dedication that drives meaningful results. 
-From cutting-edge technology to innovative design approaches, learn how we shape solutions 
-that leave a lasting impression. Get an exclusive look inside our creative process and see 
-the difference thoughtful execution can make. Every insight is crafted to inspire, inform, 
-and spark new possibilities for your business or project.
-</p>
-<div class="stories-hex-grid">
-<!-- Hex Card 1 -->
-<div class="hex-card" data-aos="fade-left">
-<div class="hex-content">
-<h3 class="hex-title">A Journey Through Creativity</h3>
-<p class="hex-description">
-Explore how we turn ideas into stunning digital experiences that inspire. 
-From innovative design concepts to strategic execution, every project is crafted 
-to leave a lasting impact. Our stories showcase the creativity, effort, and passion 
-behind each successful project, giving you an inside look at how we make ideas come alive.
-</p>
+<div class="text-center mb-5" data-aos="zoom-in">
+<p class="small-heading">INDUSTRIES WE SERVE</p>
+<h2 class="section-title" style="color: white; font-family: 'Times New Roman', serif;">Driving Innovation Across <span>Industries</span></h2>
 </div>
+<div class="industries-grid">
+<a href="industries.html#real-estate" class="industry-link">
+<div class="industry-card" data-aos="slide-right">
+<div class="icon"><i class="bi bi-building"></i></div>
+<h4>Real Estate</h4>
+<p>Transforming property management with digital innovation.</p>
 </div>
-<!-- Hex Card 2 -->
-<div class="hex-card" data-aos="fade-right">
-<div class="hex-content">
-<h3 class="hex-title">Innovation in Action</h3>
-<p class="hex-description">
-See how our strategies are transforming businesses with cutting-edge solutions. 
-We combine technology, creativity, and data-driven insights to deliver measurable results. 
-Each story highlights the challenges faced, innovative approaches applied, and the impact achieved, 
-giving you a deeper understanding of how innovation drives success in the real world.
-</p>
+</a>
+<a href="industries.html#healthcare" class="industry-link">
+<div class="industry-card" data-aos="slide-right">
+<div class="icon"><i class="bi bi-heart-pulse"></i></div>
+<h4>Healthcare</h4>
+<p>Empowering hospitals and clinics with cloud-based systems.</p>
 </div>
+</a>
+<a href="industries.html#ecommerce" class="industry-link">
+<div class="industry-card" data-aos="slide-right">
+<div class="icon"><i class="bi bi-cart-check"></i></div>
+<h4>E-Commerce</h4>
+<p>Boosting online sales with scalable infrastructure.</p>
 </div>
+</a>
+<a href="industries.html#technology" class="industry-link">
+<div class="industry-card" data-aos="slide-left">
+<div class="icon"><i class="bi bi-cpu"></i></div>
+<h4>Technology</h4>
+<p>Innovating with modern DevOps and automation tools.</p>
 </div>
+</a>
+<a href="industries.html#finance" class="industry-link">
+<div class="industry-card" data-aos="slide-left">
+<div class="icon"><i class="bi bi-currency-exchange"></i></div>
+<h4>Finance</h4>
+<p>Ensuring secure, high-performance digital banking solutions.</p>
 </div>
-</section>
-
-
-
-
-
-<!--strengths-section-->
-<section class="strengths-section">
-<h2 class="section-title" data-aos="fade-up">Our Strengths</h2>
-<p class="section-subtitle" data-aos="fade-up">
-Core capabilities that define how we deliver consistent value, strategic precision,
-and measurable long-term impact across every engagement.
-</p>
-<div class="strengths-grid">
-<!-- BOX 1 -->
-<div class="strength-box left" data-aos="fade-up">
-<div class="strength-icon-hex">
-<svg
-class="hex-icon"
-width="34"
-height="34"
-viewBox="0 0 24 24"
-fill="none"
-stroke="white"
-stroke-width="1.7"
-stroke-linecap="round"
-stroke-linejoin="round"
->
-<circle cx="12" cy="12" r="3"></circle>
-<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-</svg>
+</a>
+<a href="industries.html#media" class="industry-link">
+<div class="industry-card" data-aos="slide-left">
+<div class="icon"><i class="bi bi-broadcast-pin"></i></div>
+<h4>Media</h4>
+<p>Delivering seamless content streaming experiences globally.</p>
 </div>
-<h3>Deep Expertise</h3>
-<p>
-Industry-driven knowledge backed by real-world execution experience across
-complex enterprise environments, enabling us to deliver practical solutions
-that scale with confidence and consistency.
-</p>
-</div>
-<!-- BOX 2 -->
-<div class="strength-box right" data-aos="fade-up">
-<div class="strength-icon-hex">
-<svg
-class="hex-icon"
-width="34"
-height="34"
-viewBox="0 0 24 24"
-fill="none"
-stroke="white"
-stroke-width="1.7"
-stroke-linecap="round"
-stroke-linejoin="round"
->
-<line x1="12" y1="20" x2="12" y2="10"></line>
-<line x1="18" y1="20" x2="18" y2="4"></line>
-<line x1="6" y1="20" x2="6" y2="14"></line>
-</svg>
-</div>
-<h3>Strategic Thinking</h3>
-<p>
-Insight-led planning aligned with long-term business goals, scalable
-architectures, and measurable outcomes that support sustainable growth
-and informed decision-making.
-</p>
-</div>
-<!-- BOX 3 --> 
-<div class="strength-box left" data-aos="fade-down">
-<div class="strength-icon-hex">
-<svg
-class="hex-icon"
-width="34"
-height="34"
-viewBox="0 0 24 24"
-fill="none"
-stroke="white"
-stroke-width="1.7"
-stroke-linecap="round"
-stroke-linejoin="round"
->
-<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-</svg>
-</div>
-<h3>Reliability</h3>
-<p>
-Secure, stable, and dependable solutions engineered to support
-mission-critical operations, ensuring performance, resilience,
-and uninterrupted business continuity.
-</p>
-</div>
-<!-- BOX 4 -->
-<div class="strength-box right" data-aos="fade-down">
-<div class="strength-icon-hex">
-<svg
-class="hex-icon"
-width="32"
-height="32"
-viewBox="0 0 24 24"
-fill="none"
-stroke="white"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round"
->
-<path d="M3 17l6-6 4 4 7-7"></path>
-<path d="M14 7h7v7"></path>
-</svg>
-</div>
-<h3>Future Ready</h3>
-<p>
-Architected to evolve alongside emerging technologies and
-adapt seamlessly to future business demands, ensuring
-long-term relevance and sustained performance.
-</p>
+</a>
 </div>
 </div>
 </section>
@@ -584,445 +241,349 @@ long-term relevance and sustained performance.
 
 
 
-<!-- Testimonials Section -->
-<section class="testimonials-section">
+<!-- portfolio -->
+<section id="continuous-portfolio" class="portfolio-slider-section">
+<div class="container text-center">
+<div class="slider-header">
+</div>
+</div>
+<section class="portfolio-section">
 <div class="container">
-<h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
-<p class="section-subtitle" data-aos="fade-up">
-Real experiences shared by our clients, highlighting our commitment to quality, reliability, and long-term business success.
-</p>
-<div class="testimonials-wrapper">
-<!-- Testimonial Card 1 -->
-<div class="testimonial-card" data-aos="fade-left">
-<p class="testimonial-text">"Absolutely amazing service! The team exceeded our expectations and delivered on time."</p>
-<div class="testimonial-author">
-<img src="clint-1.jpg" alt="Client photo">
-<div>
-<h4>Jane Doe</h4>
-<span>CEO, ExampleCorp</span>
+<div class="section-header-top" data-aos="zoom-in">
+<p class="small-heading slider-sub">OUR SUCCESS Portfolio</p>
+<h2 class="section-title-dark" style="color: white; font-family: 'Times New Roman', serif;">
+Case Studies / <span class="accent-red-text">Portfolio</span>
+</h2>
 </div>
+<div class="swiper portfolio-swiper">
+<div class="swiper-wrapper">
+<a href="casestudies.html" class="swiper-slide">
+<div class="portfolio-card" data-aos="zoom-in">
+<i class="bi bi-shop"></i>
+<h3 class="card-title-dark">E-commerce Acceleration</h3>
+<p>45% AOV increase in 6 months for a major online retailer.</p>
 </div>
+</a>
+<a href="casestudies.html" class="swiper-slide">
+<div class="portfolio-card" data-aos="zoom-in" data-aos-delay="100">
+<i class="bi bi-cpu"></i>
+<h3 class="card-title-dark">SaaS Lead Generation</h3>
+<p>Tripled MQL rate through targeted content and automation.</p>
 </div>
-<!-- Testimonial Card 2 -->
-<div class="testimonial-card" data-aos="fade-right">
-<p class="testimonial-text">"Professional, reliable, and creative. Highly recommend for anyone looking for top-notch solutions."</p>
-<div class="testimonial-author">
-<img src="clint-2.jpg" alt="Client photo">
-<div>
-<h4>John Smith</h4>
-<span>Founder, StartupX</span>
+</a>
+<a href="casestudies.html" class="swiper-slide">
+<div class="portfolio-card" data-aos="zoom-in" data-aos-delay="200">
+<i class="bi bi-hospital"></i>
+<h3 class="card-title-dark">Healthcare Digital Trust</h3>
+<p>70% lift in patient bookings via UI/UX focused redesign.</p>
 </div>
+</a>
+<a href="casestudies.html" class="swiper-slide">
+<div class="portfolio-card" data-aos="zoom-in" data-aos-delay="300">
+<i class="bi bi-bank"></i>
+<h3 class="card-title-dark">Financial Sector Security</h3>
+<p>Implemented secure, high-speed lead funnels compliant with GDPR.</p>
 </div>
+</a>
+<a href="casestudies.html" class="swiper-slide">
+<div class="portfolio-card" data-aos="zoom-in" data-aos-delay="400">
+<i class="bi bi-camera-reels"></i>
+<h3 class="card-title-dark">Media & Entertainment</h3>
+<p>Scaled streaming platform reach by optimizing YouTube and paid media.</p>
 </div>
-<!-- Testimonial Card 3 -->
-<div class="testimonial-card" data-aos="fade-down">
-<p class="testimonial-text">"Their attention to detail and customer support is outstanding. A pleasure to work with!"</p>
-<div class="testimonial-author">
-<img src="clint-3.jpg" alt="Client photo">
-<div>
-<h4>Mary Johnson</h4>
-<span>Marketing Head, BrandCo</span>
+</a>
+<a href="casestudies.html" class="swiper-slide">
+<div class="portfolio-card" data-aos="zoom-in" data-aos-delay="500">
+<i class="bi bi-truck"></i>
+<h3 class="card-title-dark">Logistics & Supply Chain</h3>
+<p>Reduced cost-per-acquisition by 25% using geo-targeting.</p>
 </div>
-</div>
+</a>
 </div>
 </div>
 </div>
 </section>
 
 
-<hr class="a-line">
+
+</section>
 
 
-<!--footer-section-->
-<footer class="site-footer">
-<div class="footer-container">
-<div class="footer-col">
-<h4>About Company</h4>
-<p>
-We are a forward-thinking technology solutions provider delivering
-innovative services to help businesses scale and thrive in a
-digital-first world.
-</p>
+
+<section id="gallery-section" class="gallery-section">
+<div class="container text-center">
+<div class="gallery-header" data-aos="fade-up">
+<p class="small-heading gallery-sub">OUR VISUAL STORY</p>
+<h2 class="section-title gallery-main" style="color: white; font-family: 'Times New Roman', serif;">
+See Our <span class="text-red">Creative Work</span>
+</h2>
+<p class="gallery-description">A curated portfolio showcasing our design philosophy and execution excellence.</p>
 </div>
+</div>
+
+<div class="modern-gallery-grid container">
+<a href="Gallery.html" class="gallery-card card-wide"  data-aos="zoom-in" data-aos-delay="100">
+<img src="images/Modern Website Design.png" alt="Modern website layout" class="card-img">
+<div class="card-overlay">
+<p class="overlay-caption">Modern Website Redesign</p>
+<i class="bi bi-arrow-up-right"></i>
+</div>
+</a>
+
+<a href="Gallery.html" class="gallery-card"  data-aos="zoom-in" data-aos-delay="200">
+<img src="images/Mobile-App-1.jpg" alt="Mobile application interface" class="card-img">
+<div class="card-overlay">
+<p class="overlay-caption">Mobile App UI/UX</p>
+<i class="bi bi-arrow-up-right"></i>
+</div>
+</a>
+
+<a href="Gallery.html" class="gallery-card card-tall"  data-aos="zoom-in" data-aos-delay="300">
+<img src="images/Complete Brand Identity.jpg" alt="Corporate brand identity kit" class="card-img">
+<div class="card-overlay">
+<p class="overlay-caption">Complete Brand Identity</p>
+<i class="bi bi-arrow-up-right"></i>
+</div>
+</a>
+
+<a href="Gallery.html" class="gallery-card"  data-aos="zoom-in" data-aos-delay="400">
+<img src="images/Advanced Data Visualization.jpg" alt="Data analytics dashboard" class="card-img">
+<div class="card-overlay">
+<p class="overlay-caption">Advanced Data Visualization</p>
+<i class="bi bi-arrow-up-right"></i>
+</div>
+</a>
+
+<a href="Gallery.html" class="gallery-card"  data-aos="zoom-in" data-aos-delay="500">
+<img src="images/Digital Campaign Assets.jpg" alt="Digital marketing campaign assets" class="card-img">
+<div class="card-overlay">
+<p class="overlay-caption">Digital Campaign Assets</p>
+<i class="bi bi-arrow-up-right"></i>
+</div>
+</a>
+
+<a href="Gallery.html" class="gallery-card card-wide"  data-aos="zoom-in" data-aos-delay="600">
+<img src="images/E-commerce Platform Build.png" alt="E-commerce platform screenshot" class="card-img">
+<div class="card-overlay">
+<p class="overlay-caption">E-commerce Platform Build</p>
+<i class="bi bi-arrow-up-right"></i>
+</div>
+</a>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTACT & CTA SECTION -->
+<section id="contact-cta" class="contact-section">
+<div class="container contact-grid">
+<div class="contact-info" data-aos="slide-right">
+<h2 class="contact-heading" style=" color: var(--color-darkblue); font-family: 'Times New Roman', serif;">
+Ready to Start Your <span class="text-red">Next Project?</span>
+</h2>
+<p class="contact-description">
+Reach out today for a free consultation. We'll show you how our strategic approach can turn your goals into measurable success.
+</p>
+<div class="contact-details">
+
+<div class="detail-item">
+<i class="bi bi-envelope-fill"></i>
+<a href="mailto:adleway.com@gmail.com" class="detail-text">adleway.com@gmail.com</a>
+</div>
+
+<div class="detail-item">
+<i class="bi bi-geo-alt-fill"></i>
+<p class="detail-text">2nd Floor, North Tower, The Skyview 20, Hitech City Main Rd, Hyderabad,
+Telangana 500032</p>
+</div>
+</div>
+<div class="social-links">
+<a href="http://linkedin.com/company/31049030/admin/dashboard/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+<a href="https://www.youtube.com/@AdLeway" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+<a href="https://www.instagram.com/adleway/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+<a href="https://www.facebook.com/AdLeway/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+</div>
+
+</div>
+<!-- Right Side: Contact Form -->
+<div class="contact-form-wrapper" data-aos="slide-left">
+<h3 class="form-title">Send Us a Message</h3>
+<form class="contact-form" id="contact_form">
+<div class="form-group">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" required placeholder="Rishi">
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required placeholder="Rishi@example.com">
+</div>
+<div class="form-group">
+<label for="requirement">Requirement</label>
+<select id="requirement" name="requirement" required>
+<option value="" disabled selected>Select Your Requirement</option>
+<option value="Digital Marketing">Digital Marketing</option>
+<option value="Google Ads / PPC">Google Ads / PPC</option>
+<option value="Meta Ads">Meta Ads</option>
+<option value="SEO">SEO</option>
+<option value="Content Marketing">Content Marketing</option>
+<option value="Video Marketing">Video Marketing</option>
+<option value="Email/WhatsApp Marketing">Email/WhatsApp Marketing</option>
+<option value="Analytics and Reporting">Analytics and Reporting</option>
+<option value="Web Designing and Development">Web Designing and Development</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message">Project Details</label>
+<textarea id="message" name="message" rows="5" required placeholder="Tell us about your project and goals..."></textarea>
+</div>
+<button type="submit" class="btn btn-submit">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+
+
+
+<div class="footer-content container footer-grid">
+<!-- COLUMN 1: QUICK LINKS -->
 <div class="footer-col">
-<h4>Quick Links</h4>
-<ul>
+<h5 class="footer-heading">QUICK LINKS</h5>
+<ul class="footer-links">
 <li><a href="index.html">Home</a></li>
-<li><a href="Insights.html">Insights</a></li>
-<li><a href="Industries.html">Industries</a></li>
-<li><a href="Services.html">Services</a></li>
-<li><a href="about us.html">About Us</a></li>
-<li><a href="Careers.html">Careers</a></li>
-<li><a href="News.html">News</a></li>
-<li><a href="Investors.html">Investors</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="industries.html">Industries</a></li>
+<li><a href="casestudies.html">Case Studies / Portfolio</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
 <li><a href="Contact Us.html">Contact Us</a></li>
 </ul>
 </div>
+<!-- COLUMN 2: SERVICES -->
 <div class="footer-col">
-<h4>Services</h4>
-<ul>
-<li><a href="Digital Transformation.html">Digital Transformation</a></li>
-<li><a href="Cloud Services.html">Cloud Services</a></li>
-<li><a href="Data & AI.html">Data & AI</a></li>
-<li><a href="Cybersecurity.html">Cybersecurity</a></li>
-<li><a href="Application Development.html">Application Development</a></li>
-<li><a href="Enterprise Platforms.html">Enterprise Platforms</a></li>
-<li><a href="IT Consulting.html">IT Consulting</a></li>
-<li><a href="Infrastructure Services.html">Infrastructure Services</a></li>
+<h5 class="footer-heading">SERVICES</h5>
+<ul class="footer-links footer-services-list">
+<li><a href="Google Ads-PPC.html">Google Ads / PPC</a></li>
+<li><a href="Meta-Ads.html">Meta Ads</a></li>
+<li><a href="SEO.html">SEO</a></li>
+<li><a href="Content-Marketing.html">Content Marketing</a></li>
+<li><a href="Video-Marketing.html">Video Marketing</a></li>
+<li><a href="Email-WhatsApp Marketing.html">Email & WhatsApp Marketing</a></li>
+<li><a href="Analytics & Reporting.html">Analytics & Reporting</a></li>
+<li><a href="Web designing and Development.html">Web Designing & Development</a></li>
 </ul>
 </div>
+<!-- COLUMN 3: REACH US -->
 <div class="footer-col">
-<h4>Get in Touch</h4>
-<p>123 Tech Avenue, Silicon Valley, CA</p>
-<p>Email: info@company.com</p>
-<h4 class="follow-title">Follow Us</h4>
-<div class="footer-social">
-<a href="https://www.linkedin.com/company/rvinnovationlabs" target="_blank"><i class="bi bi-linkedin"></i></a>
-<a href="https://www.facebook.com/Rvinnovationlabs" target="_blank"><i class="bi bi-facebook"></i></a>
-<a href="https://www.instagram.com/rvinnovationlabs/" target="_blank"><i class="bi bi-instagram"></i></a>
-<a href="http://youtube.com/channel/UCA2L-a9-JWdX5d2rhKcXuQg" target="_blank"> <i class="bi bi-youtube"></i></a>
-<a href="https://x.com/RvILabs" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<h5 class="footer-heading">REACH US</h5>
+
+<div class="reach-item">
+<i class="bi bi-geo-alt-fill reach-icon"></i>
+<p class="reach-text">
+2nd Floor, North Tower,<br>
+The Skyview 20, Hitech City Main Rd,<br>
+Hyderabad, Telangana 500032
+</p>
+</div>
+
+<div class="reach-item">
+<i class="bi bi-envelope-fill reach-icon"></i>
+<a href="mailto:adleway.com@gmail.com"
+class="reach-email">adleway.com@gmail.com</a>
+</div>
+</div>
+
+<!-- COLUMN 4: FOLLOW US + LOGO -->
+<div class="footer-col">
+<h5 class="footer-heading">FOLLOW US</h5>
+<div class="social-links footer-socials">
+<a href="http://linkedin.com/company/31049030/admin/dashboard/" class="footer-social-icon" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-linkedin"></i>
+</a>
+<a href="https://www.youtube.com/@AdLeway" class="footer-social-icon" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-youtube"></i>
+</a>
+<a href="https://www.instagram.com/adleway/" class="footer-social-icon" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-instagram"></i>
+</a>
+<a href="https://www.facebook.com/AdLeway/" class="footer-social-icon" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-facebook"></i>
+</a>
+</div>
+<br>
+<div class="footer-logo-bottom">
+<img src="images/AdLeway.png" 
+alt="AdLeway Logo" 
+class="footer-logo-img">
 </div>
 </div>
 </div>
-<div class="footer-bottom">
-© 2026 Company Name. All rights reserved.
+<!-- Copyright Bar -->
+<div class="footer-copyright">
+<p>&copy; 2025 All copyrights reserved.</p>
 </div>
-</footer>
 
 
 
 <script>
-const aboutData = [
-{
-title: "Who We Are",
-desc: "  We are a passionate team dedicated to delivering high-quality services that bring ideas to life. With a strong focus on creativity, innovation, and customer satisfaction, we turn every project into a meaningful experience.",
-img: "gallery hero.jpg"
-},
-{
-title: "Leadership",
-desc: "Our leadership team brings decades of experience in engineering and innovation. They are passionate about solving complex challenges, mentoring talent, and shaping future-ready solutions that make a real-world impact.",
-img: "gallery hero.jpg"
-},
-{
-title: "Our Values",
-desc: "Integrity, innovation, and excellence guide everything we build. These values shape our decisions, strengthen our partnerships, and ensure we create dependable, future-ready solutions that clients can trust and grow with.",
-img: "gallery hero.jpg"
-},
-{
-title: "Sustainability",
-desc: "We focus on long-term sustainability through responsible technology practices. From thoughtful system design to energy-efficient digital solutions, we are committed to creating technology that benefits businesses, users, and the planet.",
-img: "gallery hero.jpg"
-},
-{
-title: "Diversity & Inclusion",
-desc: "Empowering diverse voices and inclusive innovation. By embracing diversity in thought, background, and experience, we create stronger teams and more meaningful digital products that serve a global and inclusive audience.",
-img: "gallery hero.jpg"
-},
-{
-title: "Corporate Responsibility",
-desc: "Committed to ethical growth and social responsibility. By upholding strong governance, ethical standards, and community-focused initiatives, we strive to create lasting value while making a positive difference in society.",
-img: "gallery hero.jpg"
-}
-];
-
-let currentIndex = 0;
-const image = document.getElementById("aboutImage");
-const heading = document.getElementById("aboutHeading");
-const desc = document.getElementById("aboutDesc");
-const textContent = document.querySelector(".about-text-content");
-const dots = document.querySelectorAll(".dot");
-function updateSlide(index) {
-image.style.opacity = 0;
-textContent.style.opacity = 0;
-setTimeout(() => {
-image.src = aboutData[index].img;
-heading.textContent = aboutData[index].title;
-desc.textContent = aboutData[index].desc;
-image.style.opacity = 1;
-textContent.style.opacity = 1;
-dots.forEach(d => d.classList.remove("active"));
-dots[index].classList.add("active");
-currentIndex = index;
-}, 300);
-}
-dots.forEach(dot => {
-dot.addEventListener("click", () => {
-updateSlide(+dot.dataset.index);
-});
-});
-prevBtn.onclick = () => {
-updateSlide((currentIndex - 1 + aboutData.length) % aboutData.length);
-};
-nextBtn.onclick = () => {
-updateSlide((currentIndex + 1) % aboutData.length);
-};
-</script>
-
-
-
-
-<script>
-// TOGGLE MOBILE MENU
-const mobileToggle = document.getElementById('mobileToggle');
-const mobileMenu = document.getElementById('mobileMenu');
-mobileToggle.addEventListener('click', () => {
-mobileMenu.classList.toggle('show');
-mobileToggle.classList.toggle('active'); 
-});
-</script>
-
-
-<script>
-const header = document.querySelector('.header-wrapper');
-
-window.addEventListener('scroll', () => {
-if (window.scrollY > 80) {
-header.classList.add('scrolled');
-} else {
-header.classList.remove('scrolled');
-}
-});
-</script>
-
-
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-AOS.init({
-duration: 800,
-once: true
-});
-});
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-const canvas = document.getElementById("polygonCanvas");
-if(!canvas) return;
-
-const scene = new THREE.Scene();
-
-const camera = new THREE.PerspectiveCamera(45,1,0.1,100);
-camera.position.z = 11;
-
-const renderer = new THREE.WebGLRenderer({
-canvas:canvas,
-alpha:true,
-antialias:true
-});
-
-renderer.setPixelRatio(window.devicePixelRatio);
-
-function resize(){
-const w = canvas.clientWidth;
-const h = canvas.clientHeight;
-
-renderer.setSize(w,h,false);
-camera.aspect = w/h;
-camera.updateProjectionMatrix();
-}
-resize();
-
-/* LIGHTS */
-
-scene.add(new THREE.AmbientLight(0xffffff,0.6));
-
-const glowLight = new THREE.PointLight(0x3B82F6,3,40);
-glowLight.position.set(0,0,6);
-scene.add(glowLight);
-
-/* CENTER DISC */
-
-const centerGeo = new THREE.CircleGeometry(1.7,64);
-
-const centerMat = new THREE.MeshStandardMaterial({
-color:0x050505,
-transparent:true,
-opacity:0.95
-});
-
-const centerDisc = new THREE.Mesh(centerGeo,centerMat);
-scene.add(centerDisc);
-
-/* CENTER POLYGON */
-
-const polyGeo = new THREE.CircleGeometry(0.9,6);
-
-const polyMat = new THREE.MeshStandardMaterial({
-color:0x3B82F6,
-emissive:0x3B82F6,
-emissiveIntensity:1.5
-});
-
-const polygon = new THREE.Mesh(polyGeo,polyMat);
-polygon.position.z = 0.1;
-scene.add(polygon);
-
-/* BOX RING */
-
-const boxRing = new THREE.Group();
-const boxes = [];
-
-const radius = 3.3;
-const count = 32;
-
-for(let i=0;i<count;i++){
-
-const angle = (i/count)*Math.PI*2;
-
-const x = Math.cos(angle)*radius;
-const y = Math.sin(angle)*radius;
-
-const geo = new THREE.BoxGeometry(0.38,0.38,0.12);
-
-const mat = new THREE.MeshStandardMaterial({
-color:0x3B82F6,
-emissive:0x000000
-});
-
-const box = new THREE.Mesh(geo,mat);
-
-box.position.set(x,y,0);
-box.lookAt(0,0,0);
-
-boxes.push(box);
-boxRing.add(box);
-
-}
-
-scene.add(boxRing);
-
-/* SLIM GLOW RING */
-
-const ringGeo = new THREE.RingGeometry(3.9,4,64);
-
-const ringMat = new THREE.MeshBasicMaterial({
-color:0x06B6D4,
-transparent:true,
-opacity:0.7,
-side:THREE.DoubleSide
-});
-
-const glowRing = new THREE.Mesh(ringGeo,ringMat);
-scene.add(glowRing);
-
-/* OUTER RING */
-
-const outerGeo = new THREE.RingGeometry(5.2,5.25,128);
-
-const outerMat = new THREE.MeshBasicMaterial({
-color:0x3B82F6,
-transparent:true,
-opacity:0.5,
-side:THREE.DoubleSide
-});
-
-const outerRing = new THREE.Mesh(outerGeo,outerMat);
-scene.add(outerRing);
-
-/* SHOOTING STARS */
-
-const stars = [];
-
-function createStar(){
-
-const geo = new THREE.SphereGeometry(0.06,8,8);
-
-const mat = new THREE.MeshBasicMaterial({
-color:0x06B6D4
-});
-
-const star = new THREE.Mesh(geo,mat);
-
-/* start at polygon */
-
-star.position.set(0,0,0);
-
-/* choose random box target */
-
-const target = boxes[Math.floor(Math.random()*boxes.length)];
-
-star.userData.target = target;
-
-const dir = new THREE.Vector3()
-.subVectors(target.position, star.position)
-.normalize();
-
-star.userData.direction = dir;
-
-scene.add(star);
-stars.push(star);
-
-}
-
-/* MORE STARS */
-
-setInterval(createStar,120);
-
-/* ANIMATION */
-
-function animate(){
-
-requestAnimationFrame(animate);
-
-centerDisc.rotation.z -= 0.01;
-
-boxRing.rotation.z += 0.01;
-
-outerRing.rotation.z -= 0.003;
-
-stars.forEach((star,i)=>{
-
-const speed = 0.22;
-
-star.position.add(
-star.userData.direction.clone().multiplyScalar(speed)
+document.addEventListener('DOMContentLoaded', function () {
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
+
+menuToggle.addEventListener('click', function () {
+mainNav.classList.toggle('active');
+menuToggle.setAttribute(
+'aria-expanded',
+mainNav.classList.contains('active')
 );
-
-const target = star.userData.target;
-
-const dist = star.position.distanceTo(target.position);
-
-if(dist < 0.35){
-
-target.material.emissive.setHex(0x06B6D4);
-target.material.emissiveIntensity = 2.5;
-
-/* remove star */
-
-scene.remove(star);
-stars.splice(i,1);
-
-}
-
 });
-
-/* glow fade */
-
-boxes.forEach(box=>{
-box.material.emissiveIntensity *= 0.9;
-});
-
-renderer.render(scene,camera);
-
-}
-
-animate();
-
-window.addEventListener("resize",resize);
-
 });
 </script>
 
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- EmailJS Integration -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+duration: 1000,  
+once: true,     
+offset: 100,      
+});
+</script>
 
+
+<script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+<script>
+emailjs.init("BDYOtuC_-hUCWUPRy");
+</script>
+
+<script>
+document.querySelector("#contact_form").addEventListener("submit", function(e) {
+e.preventDefault();
+
+emailjs.sendForm("service_zjg3b4q", "template_thyuhx8", "#contact_form")
+.then(() => {
+alert("Message sent successfully!");
+document.querySelector("#contact_form").reset();
+})
+.catch((error) => {
+console.error(error);
+alert("Failed to send message. Try again.");
+});
+});
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script> 
 </body>
 </html>
