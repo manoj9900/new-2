@@ -258,7 +258,7 @@ display: none;
 ================= */
 .dark-bg-pattern {
 background: rgba(0, 0, 0, 0.5);
-background-image: url("images/E-commerce Platform Build.png");
+background-image: url("E-commerce Platform Build.png");
 background-blend-mode: soft-light;
 background-size: cover;
 background-position: center;
